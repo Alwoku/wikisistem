@@ -1,0 +1,92 @@
+body.dark-style{
+
+    .button.is-light:hover, .button.is-light.is-hovered {
+        color: #fff;
+        background-color: #24292e !important;
+    }
+
+    .is-light.is-danger{
+        color: #fff;
+        background-color: #36030E;
+    }
+
+    .is-light.is-success{
+        color: #fff;
+        background-color: #0D2A1D;
+    }
+
+    .is-light.is-primary{
+        color: #fff;
+        background-color: #140B2D;
+    }
+
+    .is-light.is-warning{
+        color: #fff;
+        background-color: #382A00;
+    }
+
+    .is-light.is-info{
+        color: #fff;
+        background-color: #031936;
+    }
+
+    .is-light.is-link{
+        color: #fff;
+        background-color: #140B2D;
+    }
+
+    .is-success{
+        color: #fff;
+        background-color: hsl(153, 53%, 53%) ;
+    }
+    .is-primary{
+        color: #fff;
+        background-color: #9c77ff;
+    }
+
+    .is-danger{
+        color: #fff;
+        background-color: #f14668;
+    }
+    .is-warning {
+        color: #fff;
+        background-color: #ffe08a;
+    }
+    .is-info {
+        color: #fff;
+        background-color: #48a3ee;
+    }
+    .is-link {
+        color: #fff;
+        background-color: #536de0;
+    }
+    .is-light[disabled], fieldset[disabled]{
+        color: #fff;
+        background-color: #121212 !important;
+        border-color: #121212 !important;
+
+    }
+
+    .has-text-grey-dark {
+        color: hsl(0deg 0% 56.84%) !important;
+    }
+
+    .has-background-grey-lighter {
+        color: #fff;
+        background-color: hsl(0deg 0% 24.56%) !important;
+    }
+
+    .has-text-dark {
+        color: #B5B5B5 !important;
+    }
+
+    .link-name {
+        color: #d4afe3;
+    }
+
+    // .button.is-outlined {
+    //     border-color: #e0e0e0;
+    //     color: #e0e0e0;
+
+    // }
+}

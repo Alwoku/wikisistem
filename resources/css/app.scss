@@ -1,0 +1,448 @@
+@use 'dark-style.scss';
+
+:root{
+
+
+    body{
+        
+        --background-color: #f4f6fc;
+        --text-color: #1f1f1f;
+        --link-color: #7957d5;
+        --scrollbar-thumb: linear-gradient(180deg , #48c78e, #408767);
+        --block-code: #c1b29473;
+        --menu-hoder: #6548b3d8;
+    }    
+ 
+    body.dark-style{
+
+        --background-color: #1d1d1d;
+        --text-color: #e0e0e0;
+        --link-color: #9e80ed; 
+        --scrollbar-thumb: linear-gradient(180deg, #408767, #1F4232);
+        --block-code: #2c4d2f26;
+        --menu-hover: #7957d5;
+    }
+
+
+    body.light-style{
+        
+        --background-color: #e7eaf3;
+        --text-color: #1f1f1f;
+        --link-color: #7957d5;
+        --scrollbar-thumb: linear-gradient(180deg , #48c78e, #408767);
+        --block-code: #c1b29473;
+        --menu-hover: #6548b3d8;
+    }
+
+    --select-text: #40876781;
+    --border-line: 1px solid silver;
+}
+
+body{
+
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+
+    scrollbar-width: auto;        
+    scrollbar-color:  var(--scrollbar-thumb) var(--background-color) !important;
+
+    height: 100%;
+}
+
+
+body.light-style::-webkit-scrollbar-track {
+
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset !important;
+    background: var(--background-color) !important;
+    border-radius: 10px !important;
+}
+  
+body::-webkit-scrollbar-thumb {
+
+    border-radius: 10px !important;
+    background: var(--scrollbar-thumb) !important;
+}
+
+.v-md-editor, 
+.CodeMirror {
+
+    color: var(--text-color);
+    background: var(--background-color) !important;
+}
+
+.v-md-editor .codemirror-wrapper.codemirror-reset .CodeMirror{
+
+    color: var(--text-color) !important;
+}
+
+.v-md-editor__toolbar-item--active, 
+.v-md-editor__toolbar-item--active:hover{
+
+    background: var(--menu-hover) !important;
+}
+
+.v-md-editor__left-area-title, 
+.v-md-editor__toc-nav-item, 
+.v-md-editor__toolbar-item{
+
+    color: var(--text-color) !important;
+}
+
+pre, 
+code, 
+blockquote{
+
+    background: var(--block-code) ;
+    color: var(--text-color);
+}
+
+
+.title {
+
+    color: var(--text-color);
+}
+
+
+.profil-menu{
+
+    left: -150%;
+}
+
+.breadcrumb li.is-active a {
+
+    color: var(--text-color) !important;
+    pointer-events: none;
+}
+.navbar {
+
+    background-color: var(--background-color) !important;
+    border-bottom: var(--border-line) !important;
+
+}
+.navbar-item, 
+.navbar-link{
+
+    background: var(--background-color) !important;
+    color: var(--text-color) !important;
+
+    .list{
+
+        .navbar-dropdown >.navbar-item, 
+        .navbar-dropdown >.navbar-link{
+
+            padding: 0 !important;
+        }
+    }
+}
+
+
+.navbar-dropdown, 
+.navbar-dropdown :hover{
+
+    background-color: var(--background-color) !important;
+}
+
+.navbar-item :hover, 
+.navbar-link :hover {
+
+    background:  var(--background-color) !important;
+}
+
+header, 
+footer, 
+.footer {
+
+    background: var(--background-color) !important
+}
+a {
+
+    color: var(--link-color) ;
+}
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+strong {
+
+    color: var(--text-color) !important;
+}
+blockquote {
+
+    background-color: var(--block-code);
+    color: var(--text-color);
+}
+
+.select select, 
+.taginput .taginput-container.is-focusable, 
+.textarea, 
+.input, 
+::placeholder, 
+.table{
+
+    background: var(--background-color) !important;
+    color: var(--text-color) !important;
+}
+th, td{
+    background: var(--background-color) ;
+    color: var(--text-color) !important;
+}
+
+.header_menu{
+    background: var(--background-color) !important;
+}
+.button{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.dropdown-content,  
+.modal-card-head,
+.modal-card-body, 
+.delete:after, 
+.delete:before,
+.w-e-bar-item button:hover, 
+.w-e-drop-panel  {
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+.notes-panel {
+
+    background-color: var(--background-color);
+}
+
+.tiptap-editor-menu {
+
+    background-color: var(--background-color); 
+}
+
+.modal > .modal-content, 
+.dropdown-menu{
+
+    background: var(--background-color);
+}
+
+.title, .label{
+
+    color: var(--text-color);
+}
+
+.vs__dropdown-toggle, 
+.vs__dropdown-menu { 
+
+    background: var(--background-color) !important;
+    border: 1px solid var(--text-color) !important;
+
+    ::placeholder, 
+    .vs--single {
+
+        color: var(--text-color);
+    }
+}
+.vs__selected, 
+.select, 
+.box,  
+.vs--disabled .vs__search{
+
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+}
+.vs__open-indicator {
+
+    fill: var(--text-color);
+}
+
+.modal-card-title{
+
+    color: var(--text-color);
+}
+
+.w-e-bar, 
+.w-e-text-container [data-slate-editor]{
+
+    background-color: var(--background-color);
+}
+
+
+.menu-list a:hover,
+.menu-list a.is-active,
+.menu-list a:hover a,
+.v-md-editor__toolbar-item--active, 
+.v-md-editor__toolbar-item--active:hover {
+
+    background-color: var(--menu-hover);
+    color: var(--text-color);
+}
+
+pre {
+
+    color: var(--text-color);
+    background-color: var(--block-code);
+    code{
+
+        color: var(--text-color);
+    }
+}
+
+.notes-panel::-webkit-scrollbar-track {
+
+    background-color: var(--background-color);
+}
+
+
+.notes-panel::-webkit-scrollbar-thumb {
+
+    background: linear-gradient(180deg, #408767 , #1F4232);
+}
+
+
+.panel-trigger {
+
+    background: linear-gradient(#408767 , #1F4232);
+}
+
+.container, .notification, 
+.editor-block, 
+.vs--disabled .vs__open-indicator,
+.p-checkbox-box {
+
+    background-color: var(--background-color) !important;
+}
+.confirmationWindow .box, .panel-menu-settings {
+
+    background-color: var(--background-color);   
+}
+
+.tabs a:hover {
+
+    border-bottom-color: var(--link-color);
+    color: var(--text-color);
+}
+.p-tabs.p-component, 
+.p-tablist-tab-list,
+.p-tabpanels {
+    background: var(--background-color) !important;
+    color: var(--text-color) !important;
+}
+
+.note {
+
+    font-size: 12px;
+    color: gray;
+}
+
+.menu-list .menu-item, 
+.menu-list a, 
+.menu-list button {
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.left-panel-menu{
+
+    padding: 15px;
+    width: 350px;
+    border-right: 1px solid silver;
+    padding: 15px;
+    width: 350px;
+    height: 100vh;
+    display: block;
+    position: relative;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.centered-content-basis {
+
+    width: 100%;
+    padding: 10px;
+}
+
+.login-page {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .login-form {
+
+        max-width: 400px;
+        width: 90%;
+    }
+
+    .material-icons {
+        cursor: pointer;
+    }
+}
+
+#app {
+
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    > * {
+
+        flex: 0 0 auto;
+    }
+
+    /* растёт только контент */
+    .content {
+
+        flex-grow: 1;
+        padding: 10px;
+    }
+}
+
+.sticky-block-button{
+
+    position: sticky;
+    bottom: 0;
+    z-index: 99;
+    padding: 5px;
+}
+
+.v-md-editor__toolbar-left, 
+.v-md-editor__toolbar-right {
+
+    align-items: flex-end !important;
+    list-style: none !important;
+    margin-inline-start: 0 !important;
+}
+
+.CodeMirror-line::selection, 
+.CodeMirror-line>span::selection, 
+.CodeMirror-line>span>span::selection {
+
+    background: var(--select-text) !important;
+    color: var(--text-color) !important;
+}
+
+ul#vs1__listbox,
+ul.vs__dropdown-menu{
+    list-style: none !important;
+    margin: 0 !important;
+}
+
+.has-block-sticky-top{
+    position: sticky;
+    top: 0;
+    background: var(--background-color);
+    border-bottom: 1px solid silver;
+    z-index: 9;
+}
+
+.p-checkbox-checked .p-checkbox-icon{
+    color: var(--text-color) !important;
+}
+
+.has-cursor-pointer{
+    cursor: pointer;
+}
